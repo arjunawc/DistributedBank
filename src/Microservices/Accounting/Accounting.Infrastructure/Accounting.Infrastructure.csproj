@@ -1,0 +1,9 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <RootNamespace>DistributedBank.Services.Accounting.Infrastructure</RootNamespace>
+    <AssemblyName>DistributedBank.Services.Accounting.Infrastructure</AssemblyName>
+  </PropertyGroup>
+
+</Project>

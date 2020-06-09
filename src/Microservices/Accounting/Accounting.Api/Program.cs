@@ -7,7 +7,7 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
 
-namespace DistributedBank.Services.Account.Api
+namespace DistributedBank.Services.Accounting.Api
 {
     public class Program
     {

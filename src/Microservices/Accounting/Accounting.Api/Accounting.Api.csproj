@@ -2,8 +2,8 @@
 
   <PropertyGroup>
     <TargetFramework>netcoreapp3.1</TargetFramework>
-    <AssemblyName>DistributedBank.Services.Account.Api</AssemblyName>
-    <RootNamespace>DistributedBank.Services.Account.Api</RootNamespace>
+    <AssemblyName>DistributedBank.Services.Accounting.Api</AssemblyName>
+    <RootNamespace>DistributedBank.Services.Accounting.Api</RootNamespace>
   </PropertyGroup>
 
   <ItemGroup>

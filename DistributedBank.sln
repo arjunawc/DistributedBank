@@ -11,17 +11,17 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "WebUI", "WebUI", "{D544CF1E
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Infrastructure.EventBus", "src\Infrastructure.EventBus\Infrastructure.EventBus.csproj", "{B7AA739B-9B6D-40F6-AD19-2EBBD709C3CE}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Domain.Core", "src\Domain.Core\Domain.Core.csproj", "{48E8D694-D5F8-47FC-9928-2662E339D3F3}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Domain.Core", "src\Domain.Core\Domain.Core.csproj", "{48E8D694-D5F8-47FC-9928-2662E339D3F3}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Account", "Account", "{F98E6FA2-3DA3-43DD-A742-19E98D843DC5}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Accounting", "Accounting", "{F98E6FA2-3DA3-43DD-A742-19E98D843DC5}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Account.Api", "src\Microservices\Account\Account.Api\Account.Api.csproj", "{DD5788B2-1E2D-4E68-9BF6-ABCEE2BE6276}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Accounting.Api", "src\Microservices\Accounting\Accounting.Api\Accounting.Api.csproj", "{DD5788B2-1E2D-4E68-9BF6-ABCEE2BE6276}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Account.Infrastructure", "src\Microservices\Account\Account.Infrastructure\Account.Infrastructure.csproj", "{5B217F4F-1449-449B-ADDF-95045377A0C6}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Accounting.Infrastructure", "src\Microservices\Accounting\Accounting.Infrastructure\Accounting.Infrastructure.csproj", "{5B217F4F-1449-449B-ADDF-95045377A0C6}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Account.Domain", "src\Microservices\Account\Account.Domain\Account.Domain.csproj", "{218B4C76-FB0F-444A-9AA0-1401DA0A995C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Accounting.Domain", "src\Microservices\Accounting\Accounting.Domain\Accounting.Domain.csproj", "{218B4C76-FB0F-444A-9AA0-1401DA0A995C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Account.Application", "src\Microservices\Account\Account.Application\Account.Application.csproj", "{116BF611-AD9C-412C-AF33-535EECC3D7C6}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Accounting.Application", "src\Microservices\Accounting\Accounting.Application\Accounting.Application.csproj", "{116BF611-AD9C-412C-AF33-535EECC3D7C6}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
