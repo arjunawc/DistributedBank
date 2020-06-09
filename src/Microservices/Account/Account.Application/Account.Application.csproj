@@ -1,0 +1,9 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <AssemblyName>DistributedBank.Services.Account.Application</AssemblyName>
+    <RootNamespace>DistributedBank.Services.Account.Application</RootNamespace>
+  </PropertyGroup>
+
+</Project>
