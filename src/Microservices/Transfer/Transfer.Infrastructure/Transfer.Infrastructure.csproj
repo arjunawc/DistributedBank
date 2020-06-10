@@ -6,4 +6,9 @@
     <RootNamespace>DistributedBank.Services.Transfer.Infrastructure</RootNamespace>
   </PropertyGroup>
 
+  <ItemGroup>
+    <Folder Include="Context\" />
+    <Folder Include="Repository\" />
+  </ItemGroup>
+
 </Project>
