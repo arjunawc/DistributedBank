@@ -33,15 +33,14 @@ namespace DistributedBank.Services.Accounting.Api
             //Domain Bus
             services.AddTransient<IEventBus, RabbitMQBus>();
 
-            //Application Services
-            services.AddTransient<IAccountRepository, AccountRepository>();
-
-            //Domain Accounting Commands
+            //Domain Commands
             services.AddTransient<IRequestHandler<CreateTransferCommand, bool>, TransferCommandHandler>();
+
+            //Application Services
+            services.AddTransient<IAccountRepository, AccountRepository>();            
 
             //Data
             services.AddTransient<IAccountService, AccountService>();
-            services.AddTransient<AccountingDbContext>();
 
             services.AddDbContext<AccountingDbContext>(options =>
                 options.UseSqlServer(_configuration.GetConnectionString("AccountingDbConnection")));
@@ -70,14 +69,13 @@ namespace DistributedBank.Services.Accounting.Api
 
             app.UseAuthorization();
 
+            app.UseSwagger();
+            app.UseSwaggerUI(c => { c.SwaggerEndpoint("/swagger/v1/swagger.json", "Accounting Microservice v1"); });
+
             app.UseEndpoints(endpoints =>
             {
                 endpoints.MapControllers();
             });
-
-            app.UseSwagger();
-            app.UseSwaggerUI(c => { c.SwaggerEndpoint("/swagger/v1/swagger.json", "Accounting Microservice v1"); });
-
         }
     }
 }

@@ -7,9 +7,12 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Folder Include="Interfaces\" />
     <Folder Include="Models\" />
-    <Folder Include="Services\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\Domain.Core\Domain.Core.csproj" />
+    <ProjectReference Include="..\Transfer.Domain\Transfer.Domain.csproj" />
   </ItemGroup>
 
 </Project>
