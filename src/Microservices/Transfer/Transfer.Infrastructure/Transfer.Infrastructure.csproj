@@ -1,0 +1,9 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <AssemblyName>DistributedBank.Services.Transfer.Infrastructure</AssemblyName>
+    <RootNamespace>DistributedBank.Services.Transfer.Infrastructure</RootNamespace>
+  </PropertyGroup>
+
+</Project>
