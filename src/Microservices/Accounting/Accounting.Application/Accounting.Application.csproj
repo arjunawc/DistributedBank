@@ -6,4 +6,8 @@
     <RootNamespace>DistributedBank.Services.Accounting.Application</RootNamespace>
   </PropertyGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\Accounting.Domain\Accounting.Domain.csproj" />
+  </ItemGroup>
+
 </Project>
