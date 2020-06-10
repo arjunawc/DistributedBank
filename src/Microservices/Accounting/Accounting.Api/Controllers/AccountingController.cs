@@ -1,4 +1,5 @@
 ﻿using DistributedBank.Services.Accounting.Application.Interfaces;
+using DistributedBank.Services.Accounting.Application.Models;
 using DistributedBank.Services.Accounting.Domain.Models;
 using Microsoft.AspNetCore.Mvc;
 using System.Collections.Generic;
@@ -21,6 +22,13 @@ namespace DistributedBank.Services.Accounting.Api.Controllers
         public ActionResult<IEnumerable<Account>> Get()
         {
             return Ok(_accountService.GetAccounts());
+        }
+
+        [HttpPost]
+        public IActionResult Post([FromBody] AccountTransfer accountTransfer)
+        {
+            _accountService.Transfer(accountTransfer);
+            return Ok(accountTransfer);
         }
     }
 }

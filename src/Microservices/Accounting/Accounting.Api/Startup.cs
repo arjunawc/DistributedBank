@@ -2,6 +2,8 @@ using DistributedBank.Domain.Core.Bus;
 using DistributedBank.Infrastructure.EventBus;
 using DistributedBank.Services.Accounting.Application.Interfaces;
 using DistributedBank.Services.Accounting.Application.Services;
+using DistributedBank.Services.Accounting.Domain.CommandHandlers;
+using DistributedBank.Services.Accounting.Domain.Commands;
 using DistributedBank.Services.Accounting.Domain.Interfaces;
 using DistributedBank.Services.Accounting.Infrastructure.Context;
 using DistributedBank.Services.Accounting.Infrastructure.Repository;
@@ -33,6 +35,9 @@ namespace DistributedBank.Services.Accounting.Api
 
             //Application Services
             services.AddTransient<IAccountRepository, AccountRepository>();
+
+            //Domain Accounting Commands
+            services.AddTransient<IRequestHandler<CreateTransferCommand, bool>, TransferCommandHandler>();
 
             //Data
             services.AddTransient<IAccountService, AccountService>();

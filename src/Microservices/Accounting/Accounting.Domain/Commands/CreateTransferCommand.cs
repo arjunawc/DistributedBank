@@ -1,0 +1,12 @@
+﻿namespace DistributedBank.Services.Accounting.Domain.Commands
+{
+    public class CreateTransferCommand : TransferCommand
+    {
+        public CreateTransferCommand(int from, int to, decimal amount)
+        {
+            From = from;
+            To = to;
+            Amount = amount;
+        }
+    }
+}
